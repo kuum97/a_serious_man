@@ -1,3 +1,5 @@
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 const withMDX = require("@next/mdx")();
 
 /** @type {import('next').NextConfig} */
@@ -8,4 +10,4 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
 };
 
-module.exports = withMDX(nextConfig);
+export default withMDX(nextConfig);
