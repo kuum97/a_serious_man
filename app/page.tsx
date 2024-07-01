@@ -1,5 +1,12 @@
+import Hello from './content/hello.mdx';
+
 function Home() {
-  return <h1>Hi blog</h1>;
+  return (
+    <div>
+      <h1>Hi blog</h1>
+      <Hello />
+    </div>
+  );
 }
 
 export default Home;
